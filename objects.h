@@ -1,21 +1,35 @@
-#ifndef OBJECT_H
-#define OBJECT_H
+#ifndef OBJECT.H
+#define OBJECT.H
 
-typedef struct Korban{
-    string nama;
-    int absis;
-    int ordinat;
-} Korban;
+typedef enum{
+    off, on
+} status;
 
-typedef struct Lilin{
-    int absis;
-    int ordinat;
-} Lilin;
-
-void Name(string a){
-
-    char* array;
-    string nama(a);
-    array = &nama[0];
-    cout << "Simbol: " << array[0] << endl;
+void CandleEnumeration1(int q, int w, int n){
+    int* nulnumber;
+    nulnumber = NULL;
+    status light1, light2;
+    light1 = off;
+    light2 = on;
+    if(q == n-1  || w == 0 || &q == nulnumber || &w == nulnumber){
+        cout << "Status lilin 1: " << light1 << endl;
+    }
+    else{
+        cout << "Status lilin 1: " << light2 << endl;
+    }
 }
+
+void CandleEnumeration2(int e, int r, int n){
+    int* nulnumber;
+    nulnumber = NULL;
+    status light1, light2;
+    light1 = off;
+    light2 = on;
+    if(e == n-1  || r == 0 || &e == nulnumber || &r == nulnumber){
+        cout << "Status lilin 2: " << light1 << endl;
+    }
+    else{
+        cout << "Status lilin 2: " << light2 << endl;
+    }
+}
+#endif
