@@ -1,3 +1,6 @@
+//16020129
+//Muhammad Ihsan Abdul Hakim
+
 #include <iostream>
 #include "map.h" 
 #include "objects.h"
